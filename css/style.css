@@ -1,0 +1,598 @@
+
+/*=======================================
+Common CSS
+========================================*/
+
+body{
+    margin: 0;
+    color: #fffff;
+    font-family: Georgia;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.alignleft{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.alignright{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.aligncenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+
+h3{
+    color: #1f1f1f;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/*=======================================
+Top Header CSS
+========================================*/
+
+.header_area{
+    clear: both;
+    width: 100%;
+}
+
+#top_header{
+    background: #212d3a;
+    width: 100%;
+}
+
+.inner_header{
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.social_area{
+    max-width: 240px;
+    width: 100%;
+    float: left;
+}
+
+.social_area ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.social_area ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social_area ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social_area ul li a i{
+    background: #2e3f51;
+    color: #657181;
+    content: "";
+    border-radius: 50%;
+    width: 30px;
+    padding-top: 8px;
+    height: 20px;
+    text-align: center;
+    transition: .3s;
+}
+
+.social_area ul li a:hover i{
+    background: #b92d1f;
+    color: #fff;
+}
+
+.social_area ul li a:hover i.fa-linkedin-in{
+    background: #0077b5;
+    color: #fff;
+}
+
+.social_area ul li a:hover i.fa-twitter{
+    background: #00acee;
+    color: #fff;
+}
+
+.social_area ul li a:hover i.fa-pinterest{
+    background: #E60023;
+    color: #fff;
+}
+
+.social_area ul li a:hover i.fa-google-plus-g{
+    background: #db4a39;
+    color: #fff;
+}
+
+.social_area ul li a:hover i.fa-rss{
+    background: #ee802f;
+    color: #fff;
+}
+
+.search_area{
+    width: 210px;
+    float: right;
+}
+
+.search_area form{
+    background: #2e3f51;
+    border-radius: 25px;
+    float: right;
+    padding: 2%;
+    max-width: 210px;
+    width: 96%;
+    clear: both;
+}
+
+.search_area input{
+    background: #2e3f51;
+    border: 0px solid;
+    width: 75%;
+    float: left;
+    padding: 1%;
+    color: #999999;
+    font-size: 14px;
+}
+
+.search_area input[type="submit"]{
+    background: url(../img/search.png) no-repeat right;
+    width: 23%;
+    cursor: pointer;
+}
+
+.search_area input:focus{
+    outline: none;
+}
+
+/*=======================================
+Main Header CSS
+========================================*/
+
+#main_header{
+    clear: both;
+    width: 100%;
+}
+
+.inner_main{
+    background: #fff;
+    padding-top: 35px;
+    min-height: 90px;
+}
+
+.logo_area{
+    float: left;
+    width: 240px;
+}
+
+.menu_area{
+    max-width: 600px;
+    width: 100%;
+    float: right;
+    padding: 12px 0 0;
+}
+
+.menu_area ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: right;
+}
+
+
+.menu_area ul li{
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+
+
+.menu_area ul li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #999999;
+    font-size: 14px;
+}
+
+.menu_area ul li a:hover{
+    color: #212d3a;
+}
+
+.menu_area ul li:hover a{
+    color: #212d3a;
+}
+
+.menu_area ul li:hover ul li a{
+    color: #999999;
+}
+
+
+/*       Dropdown Menu          */
+
+.menu_area ul ul{
+    position: absolute;
+    width: 180px;
+    background: #212d3a;
+    left: -999999px;
+    top: 30px;
+    text-align: center;
+}
+
+.menu_area ul li:hover ul{
+    left: 0;
+}
+
+.menu_area ul li:hover ul ul{
+    left: -999999px;
+}
+
+.menu_area ul ul li ul{
+    left: -999999px;
+    top: 0;
+}
+
+.menu_area ul ul li:hover ul{
+    left: 180px;
+}
+
+.menu_area ul ul li{
+    margin: 0;
+    display: block;
+}
+
+.menu_area ul li ul li a:hover{
+    background: #2e3f51;
+    color: #999999;
+}
+
+.menu_area ul li ul li:hover a{
+    background: #2e3f51;
+    color: #999999;
+}
+
+.menu_area ul li ul li:hover ul li a{
+    background-color: none;
+    color: #999999;
+}
+
+.menu_area ul li ul li ul li a:hover{
+    background: #212d3a;
+}
+
+/*=======================================
+Hero Area CSS
+========================================*/
+
+#hero_area{
+    clear: both;
+    width: 100%;
+    background: #2e3f51;
+}
+
+.inner_hero{
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.left_hero{
+    background: #2f3944;
+    float: left;
+    width: 31%;
+    padding: 1%;
+}
+
+.left_hero img{
+    /* padding: 30px 0 20px 25px; */
+    padding-top: 30px;
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+
+.left_hero h3{
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.left_hero p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 20px;
+}
+
+.left_hero a{
+    color: #fff;
+    float: right;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.right_hero{
+    float: right;
+    width: 67%;
+}
+
+.right_hero img{
+    margin: 0;
+    display: block;
+}
+
+/*=======================================
+Slider Area CSS
+========================================*/
+
+#slider_area{
+    clear: both;
+    width: 100%;
+}
+
+.inner_slider{
+    background: #fff;
+    overflow: hidden;
+}
+
+.slider{
+
+}
+
+.slider h4{
+    color: #505050;
+    font-size: 22px;
+    font-weight: normal;
+    margin: 30px 50px;
+    padding-left: 10px;
+}
+
+
+/*=======================================
+Work Area CSS
+========================================*/
+
+#work_area{
+    background: #ffffff;
+    padding: 50px 0;
+}
+
+.inner_work{
+    overflow: hidden;
+}
+
+.child_work{
+    width: 30%;
+    float: left;
+    margin: 0 1% 15px;
+    padding: 0 1%;
+}
+
+.child_work img{
+    border: 1px solid #c8c8c8;
+    padding: 5px;
+    box-shadow: 0px 5px 8px #888888;
+    width: 100%;
+}
+
+.child_work h3{
+    color: #1f1f1f;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.child_work p{
+    color: #807d77;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.child_work a{
+    color: #2e3f51;
+    text-decoration: none;
+    font-size: 14px;
+    float: left;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.child_work a:hover{
+    color: #2e3f51;
+}
+
+.about_area1 {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.service_area{
+    margin-right: 0;
+    padding-right: 0;
+}
+.child_service{
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+}
+
+.child_service img{
+    width: 25%;
+    border: none;
+    float: left;
+    margin-right:10px ;
+}
+
+.child_service p{
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.child_service a{
+    float: right;
+}
+
+/*=======================================
+Footer Area CSS
+========================================*/
+
+#footer_area{
+    background: #eeeeee;
+    padding: 30px 0;
+    margin: 0;
+}
+
+.inner_footer{
+    overflow: hidden;
+}
+
+.child_footer{
+
+}
+
+.child_footer p{
+    color: #737373;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.6em;
+    margin-bottom: 15px;
+}
+
+.child_footer p a{
+    color: #2e3f51;
+    text-decoration: none;
+}
+
+.left_footer{
+    width: 48%;
+    margin-right: 1%;
+    float: left;
+}
+
+.child_left{
+    clear: both;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.left_image{
+    width: 25%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 30px;
+}
+
+.left_image img{
+    border: 1px solid #999999;
+    padding: 5px;
+}
+
+.left_text{
+    width: 71%;
+    float: right;
+    margin: 0 0 15px 2%;
+}
+
+.left_text h4{
+    color: #505050;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.left_text p{
+    color: #737373;
+    font-size: 14px;
+    line-height: 1.6em;
+    margin-top: 5px;
+}
+
+.mid_footer{
+    width: 24%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.right_footer{
+    width: 24%;
+    float: right;
+    margin-right: 0;
+    margin-left: 1%;
+    margin-bottom: 10px;
+}
+
+
+.child_right{
+    margin-bottom: 15px;
+    width: 100%;
+    display: inline-block;
+}
+
+.child_right img{
+    margin-right: 10px;
+}
+
+.child_right img:last-child{
+    margin-right: 0;
+}
+
+/*=======================================
+Copyright Area CSS
+========================================*/
+
+#copyright_area{
+    background: #eeeeee;
+    margin: 0;
+}
+
+.inner_copyright{
+    overflow: hidden;
+}
+
+.inner_copyright p{
+    color: #737373;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.left_copyright{
+    width: 60%;
+    float: left;
+}
+
+.right_copyright{
+    width: 40%;
+    float: right;
+}
+
+.right_copyright p{
+    text-align: right;
+}
+
+
+
+
+
