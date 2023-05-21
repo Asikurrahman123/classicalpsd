@@ -1,0 +1,8 @@
+
+/* For Tablet layout */
+
+@media only screen and (min-width:200px) and (max-width:991px){
+    .mean-container .mean-nav {width: 80%;margin-top: 0px;}
+    .mean-container .mean-nav ul li:first-child{border-top: 0px solid;}
+    .left_hero {float: none;width: 98%;}
+}
